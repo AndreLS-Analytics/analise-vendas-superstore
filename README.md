@@ -84,6 +84,7 @@ SELECT
 FROM train
 WHERE "Sales" > (SELECT AVG("Sales") FROM train)
 ORDER BY "Sales" DESC;
+```
 Insight de Negócio: Esta consulta localiza transações de grande impacto comercial. O cliente de maior destaque individual mapeado na base foi Sean Miller, registrando uma única venda no valor de $22.638,48. Clientes com esse perfil representam contas estratégicas para programs de retenção.
 
 4. Conclusão
